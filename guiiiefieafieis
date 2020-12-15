@@ -1,0 +1,138 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local GUI = Instance.new("Frame")
+local Name = Instance.new("TextLabel")
+local Admin = Instance.new("TextButton")
+local Game1 = Instance.new("TextButton")
+local Game2 = Instance.new("TextButton")
+local WS = Instance.new("TextButton")
+local Close = Instance.new("TextButton")
+local Open = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+GUI.Name = "GUI"
+GUI.Parent = ScreenGui
+GUI.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+GUI.BackgroundTransparency = 0.500
+GUI.Position = UDim2.new(0.313604921, 0, 0.35554558, 0)
+GUI.Size = UDim2.new(0, 250, 0, 183)
+
+Name.Name = "Name"
+Name.Parent = GUI
+Name.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
+Name.BackgroundTransparency = 0.500
+Name.Position = UDim2.new(-0.00359630585, 0, -0.000520467758, 0)
+Name.Size = UDim2.new(0, 250, 0, 40)
+Name.Font = Enum.Font.SourceSans
+Name.Text = "Water's GUI"
+Name.TextColor3 = Color3.fromRGB(0, 0, 0)
+Name.TextSize = 14.000
+
+Admin.Name = "Admin"
+Admin.Parent = GUI
+Admin.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
+Admin.BackgroundTransparency = 0.600
+Admin.Position = UDim2.new(-0.00400000019, 0, 0.262295067, 0)
+Admin.Size = UDim2.new(0, 78, 0, 27)
+Admin.Font = Enum.Font.SourceSans
+Admin.Text = "Admin"
+Admin.TextColor3 = Color3.fromRGB(0, 0, 0)
+Admin.TextSize = 14.000
+Admin.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+end)
+
+Game1.Name = "Game1"
+Game1.Parent = GUI
+Game1.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
+Game1.BackgroundTransparency = 0.600
+Game1.Position = UDim2.new(0.444000006, 0, 0.262295067, 0)
+Game1.Size = UDim2.new(0, 138, 0, 27)
+Game1.Font = Enum.Font.SourceSans
+Game1.Text = "Mortem Metallum [Alpha]"
+Game1.TextColor3 = Color3.fromRGB(0, 0, 0)
+Game1.TextSize = 14.000
+Game1.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/losTSTYYy/losty/main/ccfsdfgsegrth"))()
+
+end)
+
+Game2.Name = "Game2"
+Game2.Parent = GUI
+Game2.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
+Game2.BackgroundTransparency = 0.600
+Game2.Position = UDim2.new(0.445971012, 0, 0.492410362, 0)
+Game2.Size = UDim2.new(0, 138, 0, 27)
+Game2.Font = Enum.Font.SourceSans
+Game2.Text = "Greenville"
+Game2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Game2.TextSize = 14.000
+Game2.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/jVSV9tqH", true))()
+end)
+
+WS.Name = "WS"
+WS.Parent = GUI
+WS.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
+WS.BackgroundTransparency = 0.600
+WS.Position = UDim2.new(-0.00400000019, 0, 0.491803259, 0)
+WS.Size = UDim2.new(0, 78, 0, 27)
+WS.Font = Enum.Font.SourceSans
+WS.Text = "Walkspeed"
+WS.TextColor3 = Color3.fromRGB(0, 0, 0)
+WS.TextSize = 14.000
+WS.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/A5EjZHLf", true))()
+end)
+
+Close.Name = "Close"
+Close.Parent = GUI
+Close.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Close.Size = UDim2.new(0, 36, 0, 22)
+Close.Font = Enum.Font.SourceSans
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(0, 0, 0)
+Close.TextSize = 14.000
+
+Open.Name = "Open"
+Open.Parent = ScreenGui
+Open.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+Open.Position = UDim2.new(0, 0, 0.441640377, 0)
+Open.Size = UDim2.new(0, 133, 0, 35)
+Open.Font = Enum.Font.SourceSans
+Open.Text = "Open"
+Open.TextColor3 = Color3.fromRGB(0, 0, 0)
+Open.TextSize = 14.000
+
+-- Scripts:
+
+local function USSWR_fake_script() -- Close.LocalScript 
+	local script = Instance.new('LocalScript', Close)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+	
+end
+coroutine.wrap(USSWR_fake_script)()
+local function QLXADH_fake_script() -- Open.LocalScript 
+	local script = Instance.new('LocalScript', Open)
+
+	local Frame = script.Parent.Parent.GUI
+	local open = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if Frame.Visible == false then
+			Frame.Visible = true
+		end
+	end)
+	
+end
+coroutine.wrap(QLXADH_fake_script)()
