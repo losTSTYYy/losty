@@ -1,0 +1,87 @@
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Frame_2 = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local RagdollEngine = Instance.new("TextButton")
+local KAT = Instance.new("TextButton")
+local DustWastelandSurvival = Instance.new("TextButton")
+local MortemMetallum = Instance.new("TextButton")
+ 
+ScreenGui.Parent = game.CoreGui
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.new(0, 0.333333, 1)
+Frame.BorderColor3 = Color3.new(0.333333, 1, 1)
+Frame.BorderSizePixel = 5
+Frame.Position = UDim2.new(0.191969886, 0, 0.33017078, 0)
+Frame.Size = UDim2.new(0, 390, 0, 97)
+
+Frame_2.Parent = ScreenGui
+Frame_2.BackgroundColor3 = Color3.new(0, 0, 1)
+Frame_2.BorderColor3 = Color3.new(0.333333, 1, 1)
+Frame_2.BorderSizePixel = 5
+Frame_2.Position = UDim2.new(0.235884622, 0, 0.49576354, 0)
+Frame_2.Size = UDim2.new(0, 291, 0, 62)
+
+TextLabel.Parent = Frame_2
+TextLabel.BackgroundColor3 = Color3.new(0, 0.333333, 1)
+TextLabel.BorderColor3 = Color3.new(0.333333, 0.666667, 0.498039)
+TextLabel.Position = UDim2.new(0.0299232397, 0, 0.0901328325, 0)
+TextLabel.Size = UDim2.new(0, 277, 0, 50)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Made by Not Water#8412"
+TextLabel.TextColor3 = Color3.new(0, 0, 0)
+TextLabel.TextSize = 18
+
+RagdollEngine.Name = "Ragdoll Engine\n"
+RagdollEngine.Parent = ScreenGui
+RagdollEngine.BackgroundColor3 = Color3.new(0, 0.666667, 1)
+RagdollEngine.Position = UDim2.new(0.332662016, 0, 0.402277023, 0)
+RagdollEngine.Size = UDim2.new(0, 200, 0, 50)
+RagdollEngine.Font = Enum.Font.SourceSans
+RagdollEngine.Text = "Ragdoll Engine"
+RagdollEngine.TextColor3 = Color3.new(0, 0, 0)
+RagdollEngine.TextSize = 18
+RagdollEngine.TextWrapped = true
+RagdollEngine.MouseButton1Click:connect(function()
+	loadstring(game:HttpGet(('https://gitlab.com/Tsuniox/lua-stuff/-/raw/master/RagdollEngineGUI.lua'),true))()
+
+end)
+
+KAT.Name = "KAT"
+KAT.Parent = ScreenGui
+KAT.BackgroundColor3 = Color3.new(0, 0.666667, 1)
+KAT.Position = UDim2.new(0.191969886, 0, 0.402277023, 0)
+KAT.Size = UDim2.new(0, 200, 0, 50)
+KAT.Font = Enum.Font.SourceSans
+KAT.Text = "KAT"
+KAT.TextColor3 = Color3.new(0, 0, 0)
+KAT.TextSize = 18
+KAT.MouseButton1Click:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/CbQaxkLZ",true))()
+
+end)
+
+DustWastelandSurvival.Name = "Dust: Wasteland Survival\n"
+DustWastelandSurvival.Parent = ScreenGui
+DustWastelandSurvival.BackgroundColor3 = Color3.new(0, 0.666667, 1)
+DustWastelandSurvival.Position = UDim2.new(0.332662016, 0, 0.33017078, 0)
+DustWastelandSurvival.Size = UDim2.new(0, 200, 0, 50)
+DustWastelandSurvival.Font = Enum.Font.SourceSans
+DustWastelandSurvival.Text = "Dust: Wasteland Survival"
+DustWastelandSurvival.TextColor3 = Color3.new(0, 0, 0)
+DustWastelandSurvival.TextSize = 18
+
+MortemMetallum.Name = "Mortem Metallum"
+MortemMetallum.Parent = ScreenGui
+MortemMetallum.BackgroundColor3 = Color3.new(0, 0.666667, 1)
+MortemMetallum.Position = UDim2.new(0.191969886, 0, 0.33017078, 0)
+MortemMetallum.Size = UDim2.new(0, 200, 0, 50)
+MortemMetallum.Font = Enum.Font.SourceSans
+MortemMetallum.Text = "Mortem Metallum"
+MortemMetallum.TextColor3 = Color3.new(0, 0, 0)
+MortemMetallum.TextSize = 18
+MortemMetallum.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/losTSTYYy/losty/main/ccfsdfgsegrth"))()
+
+end)
