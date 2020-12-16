@@ -1,0 +1,24 @@
+local Lighting = game:FindService("Lighting")
+local MoreFPS = true -- make 'true' into 'false' if you don't want game to be more ugly
+
+--[[
+Toggle Gui = X <--
+Self Destruct = Destroy Gui
+--]]
+
+if Lighting:FindFirstChild("Atmosphere") and MoreFPS == true then
+   Lighting.Atmosphere:Destroy()
+   Lighting.Bloom:Destroy()
+   Lighting.Rays:Destroy()
+   Lighting.SunRaysAlwaysOn:Destroy()
+   Lighting.SunRaysAlwaysOnNight:Destroy()
+   Lighting.Blur:Destroy()
+   Lighting.GlobalShadows = false
+   Lighting.FogEnd = (math.huge)
+end
+
+-- Increase FPS ^
+
+loadstring(game:HttpGet(("https://pastebin.com/raw/nd6LR9gg"),true))()
+
+-- Main Script ^
